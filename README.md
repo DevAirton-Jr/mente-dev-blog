@@ -1,7 +1,5 @@
 # 🧠 Mente Dev
 
-> **O Jardim Digital de Airton Rita Jr.**
->
 > *"Software Engineering, Design Systems & Coffee."*
 
 Bem-vindo ao repositório do **Mente Dev**. Este projeto não é apenas um blog, é um **portfolio de engenharia de software** vivo. Aqui eu centralizo meus artigos técnicos, apresento meus projetos open-source e compartilho as últimas novidades que moldam minha carreira como desenvolvedor.
