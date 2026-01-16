@@ -15,7 +15,7 @@ export default function Home() {
   const designPosts = recentPosts.filter(p => p.category === 'Design');
 
   return (
-    <div className="space-y-20 pb-20">
+    <div className="space-y-12 md:space-y-20 pb-20">
       {/* Hero Section */}
       <section className="pt-8 pb-10 sm:pt-12 sm:pb-16 lg:pt-16 lg:pb-24">
         <Container>

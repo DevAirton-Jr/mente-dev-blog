@@ -30,8 +30,8 @@ export function FeaturedPost({ post }: FeaturedPostProps) {
                 className="absolute -top-24 -right-24 w-[30rem] h-[30rem] bg-primary-600/20 blur-3xl rounded-full"
             />
 
-            <div className="relative z-10 p-8 md:p-12 lg:p-16 flex flex-col md:flex-row gap-8 items-start md:items-center">
-                <div className="flex-1 space-y-8">
+            <div className="relative z-10 p-6 md:p-12 lg:p-16 flex flex-col md:flex-row gap-8 items-start md:items-center">
+                <div className="flex-1 space-y-6 md:space-y-8">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -42,7 +42,7 @@ export function FeaturedPost({ post }: FeaturedPostProps) {
                         <span>Destaque da Semana</span>
                     </motion.div>
 
-                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white leading-tight">
+                    <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight text-white leading-tight">
                         <Link href={`/posts/${post.id}`} className="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-white hover:to-primary-200 transition-all duration-300">
                             {post.title}
                         </Link>

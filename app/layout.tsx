@@ -52,6 +52,6 @@ export default function RootLayout({
   );
 }
 
-// Inicio do projeto: 14/01/2026 // 
+// Inicio do projeto: 14/01/2026 //
 // Desenvolvido e mantido por Airton R. Jr //
 
