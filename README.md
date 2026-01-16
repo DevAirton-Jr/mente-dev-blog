@@ -66,4 +66,4 @@ Para os curiosos, o projeto segue uma organização modular e escalável:
 
 ---
 
-© 2026 **Mente Dev**. Construído com 💙 e código por **Airton Rita Jr**.
+© 2026 **Mente Dev**.
