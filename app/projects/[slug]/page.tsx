@@ -74,6 +74,16 @@ export default async function ProjectPage({ params }: Props) {
                         </div>
                     </div>
 
+                    {project.image && (
+                        <div className="relative aspect-video mt-12 overflow-hidden rounded-2xl shadow-xl border border-gray-200 dark:border-gray-800">
+                            <img
+                                src={project.image}
+                                alt={project.title}
+                                className="object-cover w-full h-full"
+                            />
+                        </div>
+                    )}
+
                     {project.tags && (
                         <div className="flex flex-wrap gap-2 mt-8">
                             {project.tags.map(tag => (

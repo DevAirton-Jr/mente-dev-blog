@@ -21,6 +21,15 @@ export function PostCard({ post, index = 0 }: PostCardProps) {
             whileHover={{ y: -5 }}
             className="group relative flex flex-col space-y-3 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm transition-all shadow-sm hover:shadow-xl hover:shadow-primary-500/10 dark:hover:border-primary-800 hover:border-primary-200"
         >
+            {post.image && (
+                <div className="relative aspect-video mb-4 overflow-hidden rounded-xl">
+                    <img
+                        src={post.image}
+                        alt={post.title}
+                        className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+                    />
+                </div>
+            )}
             <div className="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400">
                 <div className="flex items-center gap-1">
                     <Calendar size={14} />

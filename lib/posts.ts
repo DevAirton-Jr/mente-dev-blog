@@ -3,6 +3,12 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import remarkParse from 'remark-parse';
+import remarkMath from 'remark-math';
+import remarkRehype from 'remark-rehype';
+import rehypeKatex from 'rehype-katex';
+import rehypeStringify from 'rehype-stringify';
+import { unified } from 'unified';
 import DOMPurify from 'isomorphic-dompurify';
 import { Post, Project, NewsItem } from '@/types';
 
@@ -79,15 +85,20 @@ export function getAllPostIds() {
 
 
 export async function getContentData(id: string, type: 'posts' | 'projects' | 'news'): Promise<Post | Project | NewsItem> {
-    const fullPath = path.join(contentDirectory, type, `${id}.md`);
+    const decodedId = decodeURIComponent(id);
+    const fullPath = path.join(contentDirectory, type, `${decodedId}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
 
     const matterResult = matter(fileContents);
 
 
-    const processedContent = await remark()
-        .use(html)
+    const processedContent = await unified()
+        .use(remarkParse)
+        .use(remarkMath)
+        .use(remarkRehype)
+        .use(rehypeKatex)
+        .use(rehypeStringify)
         .process(matterResult.content);
     const contentHtml = processedContent.toString();
     const cleanHtml = DOMPurify.sanitize(contentHtml);

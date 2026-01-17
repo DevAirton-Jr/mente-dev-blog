@@ -65,6 +65,16 @@ export default async function Post({ params }: Props) {
                     )}
                 </header>
 
+                {postData.image && (
+                    <div className="relative aspect-video mb-12 overflow-hidden rounded-3xl shadow-2xl">
+                        <img
+                            src={postData.image}
+                            alt={postData.title}
+                            className="object-cover w-full h-full"
+                        />
+                    </div>
+                )}
+
                 <div
                     className="prose prose-lg dark:prose-invert prose-blue mx-auto prose-headings:font-bold prose-headings:tracking-tight prose-a:text-primary-600 dark:prose-a:text-primary-400 hover:prose-a:text-primary-500"
                     dangerouslySetInnerHTML={{ __html: postData.contentHtml || '' }}

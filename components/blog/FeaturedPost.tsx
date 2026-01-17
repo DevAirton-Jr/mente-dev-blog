@@ -31,7 +31,7 @@ export function FeaturedPost({ post }: FeaturedPostProps) {
             />
 
             <div className="relative z-10 p-6 md:p-12 lg:p-16 flex flex-col md:flex-row gap-8 items-start md:items-center">
-                <div className="flex-1 space-y-6 md:space-y-8">
+                <div className="flex-1 space-y-6 md:space-y-8 text-left">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -70,6 +70,21 @@ export function FeaturedPost({ post }: FeaturedPostProps) {
                         </Link>
                     </motion.div>
                 </div>
+
+                {post.image && (
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.4 }}
+                        className="flex-1 w-full md:w-auto aspect-video md:aspect-[4/3] relative rounded-2xl overflow-hidden shadow-2xl border border-white/10"
+                    >
+                        <img
+                            src={post.image}
+                            alt={post.title}
+                            className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110"
+                        />
+                    </motion.div>
+                )}
             </div>
         </motion.section>
     );

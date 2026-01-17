@@ -4,6 +4,7 @@ export interface Post {
   description: string;
   date: string;
   category: string;
+  image?: string;
   featured?: boolean;
   highlight?: boolean;
   tags?: string[];
