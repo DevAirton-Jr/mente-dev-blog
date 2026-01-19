@@ -22,7 +22,7 @@ O **Mente Dev** foi construído com uma filosofia de **Performance First** e **D
 
 ---
 
-## � Stack Tecnológica
+## Stack Tecnológica
 
 Um pouco das tecnologias que alimentam este projeto:
 
