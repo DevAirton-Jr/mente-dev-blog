@@ -2,7 +2,7 @@
 
 > *"Software Engineering, Design Systems & Coffee."*
 
-Bem-vindo ao repositório do **Mente Dev**. Este projeto não é apenas um blog, é um **portfolio de engenharia de software** vivo. Aqui eu centralizo meus artigos técnicos, apresento meus projetos open-source e compartilho as últimas novidades que moldam minha carreira como desenvolvedor.
+Bem-vindo ao repositório do **Mente Dev**. Este projeto não é apenas um blog, é um **portfolio de engenharia de software** vivo. Aqui eu centralizo meus artigos técnicos, apresento meus projetos open-source e compartilho as últimas novidades como desenvolvedor.
 
 ---
 
@@ -24,7 +24,7 @@ O **Mente Dev** foi construído com uma filosofia de **Performance First** e **D
 
 ## � Stack Tecnológica
 
-Um mergulho nas tecnologias que alimentam este projeto:
+Um pouco das tecnologias que alimentam este projeto:
 
 | Camada | Tecnologia |
 | :--- | :--- |
@@ -57,12 +57,6 @@ Para os curiosos, o projeto segue uma organização modular e escalável:
 /lib          # Lógica de processamento de dados (CMS)
 /public       # Assets estáticos
 ```
-
----
-
-## � Status de Segurança
-
-✅ **Auditado**: Este projeto foi validado contra as vulnerabilidades web mais comuns (OWASP Top 10) e conta com relatórios de conformidade.
 
 ---
 
